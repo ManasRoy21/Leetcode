@@ -1,16 +1,16 @@
 input_matrix = [[1,1,1],[1,0,1],[1,1,1]]
 
-rows = set()
+rowss = set()
 cols = set()
 
 for i in range(len(input_matrix)):
     for j in range(len(input_matrix[i])):
         if input_matrix[i][j] == 0:
-            rows.add(i)
+            rowss.add(i)
             cols.add(j)
 
 
-for r in rows:
+for r in rowss:
     input_matrix[r] = [0] * len(input_matrix[r])
 
 for c in cols:
